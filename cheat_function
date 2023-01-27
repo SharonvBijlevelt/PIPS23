@@ -1,0 +1,38 @@
+## Assignment 3.2.1 Solutions - 2022 Programming in Psychological Science
+#
+# Record of Revisions
+#
+# Date            Programmer              Descriptions of Change
+# ====         ================           ======================
+# 27-Jan-23        Sharon van Bijlevelt       Original code
+
+#To cheat on the assignments 3.1.1 - 3.1.4, the following code can be used. 
+
+#Cheat function
+cheat <- function(questionnumber) {
+  if (questionnumber == 1) {
+    return('
+simulated_pips_grades <-
+  runif(40, min = 4, max = 10) 
+hist(simulated_pips_grades) ')
+  }
+  else if (questionnumber == 2) {
+    return('schiphol_temp <- read.delim("https://bit.ly/3GLVQ86", sep=",", header = T) plot(schiphol_temp$DATE, schiphol_temp$TMAX, main = "Maximum Temperature Measured at Schiphol Airport", xlab = "Time", ylab = "Maximum Temperature")')
+  }
+  else if (questionnumber == 3) {
+    return('library(ggplot2)
+library(titanic)
+titanic_train ggplot(titanic_train) +
+  geom_bar(aes(Sex, fill = as.factor(Survived))) +
+  labs(fill = "How did it go?") +
+  scale_fill_discrete(labels = c("dead", "alive")) +
+  theme_gray()')
+  }
+  else if (questionnumber == 4) {
+    return('# I think the worst theme is theme_classic(), because there are no lines in the background which can be really helpfull to read the plot
+')
+  }
+  else {
+    return('please chose between questions 1, 2, 3 and 4. The other questions are not included in this cheat function')
+  }
+}

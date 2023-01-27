@@ -1,0 +1,15 @@
+## Assignment 3.2.1 Solutions - 2022 Programming in Psychological Science
+#
+# Record of Revisions
+#
+# Date            Programmer              Descriptions of Change
+# ====         ================           ======================
+# 27-Jan-23        Sharon van Bijlevelt       Original code
+
+#Function to remind me of my upcoming deadlines and examdate for the PIPS course
+
+#Function remind_me
+remind_me <- function(){
+  return('Keep in mind: deadline PIPS is 27 jan, exam 3 feb')
+}
+remind_me()
